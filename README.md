@@ -38,13 +38,13 @@ Some of the checklists in this doc are for **C4 (🐺)** and some of them are fo
 ---
 
 # Sponsorname contest details
-- TBD main award pot
-- TBD gas optimization award pot
+- ~$60K (ETH) main award pot
+- ~$6K (ETH) gas optimization award pot
 - Join [C4 Discord](https://discord.gg/EY5dvm3evD) to register
-- Submit findings [using the C4 form](https://c4-TBD.netlify.app/)
+- Findings submitted as issues in this repo [using the C4 form](https://c4-nftx.netlify.app/)
 - [Read our guidelines for more details](https://code423n4.com/compete)
-- Starts TBD XXX XXX XX 00:00 UTC
-- Ends TBD XXX XXX XX 23:59 UTC
+- Starts May 5 00:00 UTC
+- Ends May 11 23:59 UTC
 
 This repo will be made public before the start of the contest.
 
