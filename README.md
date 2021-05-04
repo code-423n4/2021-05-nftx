@@ -1,3 +1,15 @@
+# NFTX contest details
+- ~$60K (ETH) main award pot
+- ~$6K (ETH) gas optimization award pot
+- Join [C4 Discord](https://discord.gg/EY5dvm3evD) to register
+- Findings submitted as issues in this repo [using the C4 form](https://c4-nftx.netlify.app/)
+- Submit findings [using the C4 form](https://c4-nftx.netlify.app/)
+- [Read our guidelines for more details](https://code423n4.com/compete)
+- Starts May 5 00:00 UTC
+- Ends May 11 23:59 UTC
+
+This repo will be made public before the start of the contest.
+
 ## Overview
 NFTX is a protocol for making tokenized baskets of similarly priced NFTs. Occasionally these baskets have been called funds but are officially referred to as vaults. Right now with version 1, all NFTX vaults have their state stored together but have seperate contracts for every ERC20 vault token (vtoken), however version 2 is designed so that every ERC20 vtoken also stores its own vault state and implements necessary vault functions. In this sense NFTXv2 combines vault logic and vault token logic into a single contract which is simply refferred to as a vault. These vaults get deployed using a vault factory contract.
 
