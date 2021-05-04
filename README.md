@@ -18,6 +18,10 @@ The account which calls createVault on the factory contract gets designated as t
 
 When vaults are deployed they are initially set to either allow all tokenIDs or to allow zero tokenIDs. Vaults which allow all tokenIDs are known as floor vaults. Vaults which allow no tokenIDs act as a blank canvas for vault managers to deploy what is called an eligibility module. There are different eligibility modules for different usecases. Each vault can have at most one eligibility module, but it is possible for custom eligibility modules to be developped and deployed manually.
 
+FeeDistributor maintains the treasury addr and a default allocation point for it of 0.2 points. When a vault is made, the factory contract adds a new FeeReceiver (being the LPStaking contract) with an allocation point of 0.5 into a vault-specific array in the FeeDistributor contract. Every time a fee is taken (mint/redeem/swap, etc), the fees are minted to the FeeDsitributor contract and distributeFees() is called in order to send the fees to the lp staking contract. For most vaults, since the treasury default alloc point is 0.2, and the LPStaking contract has a default of 0.5 alloc points, this means the treasury receives ~30% of all fees, while the LP staking contract receives the other ~70% unless other FeeReceivers" are added.
+
+When the LPStaking contracts receiveRewards function is called, it passes the reward to the RewardDistributionToken (the tokenized deposit of their LPs) which distributes fees in a similar manner to a dividend token. Note that if the user transfers their reward distribution tokens elsewhere, they will still receive rewards to the account used to make the deposit.
+
 ## Assumptions
 You may assume that all NFT contracts are built in good faith and comply with either the ERC721 or ERC1155 spec.
 
