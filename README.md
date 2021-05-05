@@ -4,7 +4,7 @@
 - Join [C4 Discord](https://discord.gg/EY5dvm3evD) to register
 - Submit findings [using the C4 form](https://c4-nftx.netlify.app/)
 - [Read our guidelines for more details](https://code423n4.com/compete)
-- Starts May 5 00:00 UTC
+- Starts May 6 00:00 UTC
 - Ends May 11 23:59 UTC
 
 This repo will be made public before the start of the contest.
